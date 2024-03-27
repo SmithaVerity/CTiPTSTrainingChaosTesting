@@ -15,7 +15,7 @@
 				"arguments": {
 					"state": "running",
 					"instance_ids": [
-					    "i-0731a35de6c9f05f3"
+					    "i-045ec06dde1fba7dd"
 					],
 					"filters": []
 				}
@@ -33,7 +33,7 @@
 			"module": "chaosaws.ec2.actions", 
 			"func": "stop_instance", 
 			"arguments": {
-				"instance_id": "i-0731a35de6c9f05f3"
+				"instance_id": "i-045ec06dde1fba7dd"
 			}
 		},
 		"pauses": {
@@ -45,7 +45,7 @@
 		"name": "website-must-still-respond",
 		"provider": {
 			"type": "http",
-			"url": "http://cafeasglb-929716934.ap-south-1.elb.amazonaws.com/cafe/"
+			"url": "http://cafealb-1792233323.ap-south-1.elb.amazonaws.com/cafe/"
 		}
 	},
 	{
@@ -56,7 +56,7 @@
 		  "module": "chaosaws.ec2.actions",
 		  "func": "start_instances",
 		  "arguments": {
-			"instance_ids": ["i-0731a35de6c9f05f3"]
+			"instance_ids": ["i-045ec06dde1fba7dd"]
 		}
 		},
 		"pauses": {
@@ -68,7 +68,7 @@
 		"name": "website-must-still-respond",
 		"provider": {
 			"type": "http",
-			"url": "http://cafeasglb-929716934.ap-south-1.elb.amazonaws.com/cafe/"
+			"url": "http://cafealb-1792233323.ap-south-1.elb.amazonaws.com/cafe/"
 		}
 	}
 	]
