@@ -45,7 +45,7 @@
 		"name": "website-must-still-respond",
 		"provider": {
 			"type": "http",
-			"url": "http://3.25.121.41/cafe/"
+			"url": "http://3.104.39.123/CollegeMgmt"
 		}
 	},
 	{
@@ -68,7 +68,7 @@
 		"name": "website-must-still-respond",
 		"provider": {
 			"type": "http",
-			"url": "http://3.111.148.87/cafe/"
+			"url": "http://3.104.39.123/CollegeMgmt"
 		}
 	}
 	]
