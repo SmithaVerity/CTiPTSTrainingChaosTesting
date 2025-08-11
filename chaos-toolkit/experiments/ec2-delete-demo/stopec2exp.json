@@ -15,7 +15,7 @@
 				"arguments": {
 					"state": "running",
 					"instance_ids": [
-					    "i-037f78345a349db7f"
+					    "i-0785089b958dea36d"
 					],
 					"filters": []
 				}
@@ -33,7 +33,7 @@
 			"module": "chaosaws.ec2.actions", 
 			"func": "stop_instance", 
 			"arguments": {
-				"instance_id": "i-037f78345a349db7f"
+				"instance_id": "i-0785089b958dea36d"
 			}
 		},
 		"pauses": {
@@ -45,7 +45,7 @@
 		"name": "website-must-still-respond",
 		"provider": {
 			"type": "http",
-			"url": "http://localdb-347334761.ap-southeast-2.elb.amazonaws.com/CollegeMgmt"
+			"url": "http://16.176.75.53/CollegeMgmt"
 		}
 	},
 	{
@@ -56,7 +56,7 @@
 		  "module": "chaosaws.ec2.actions",
 		  "func": "start_instances",
 		  "arguments": {
-			"instance_ids": ["i-037f78345a349db7f"]
+			"instance_ids": ["i-0785089b958dea36d"]
 		}
 		},
 		"pauses": {
@@ -68,7 +68,7 @@
 		"name": "website-must-still-respond",
 		"provider": {
 			"type": "http",
-			"url": "http://localdb-347334761.ap-southeast-2.elb.amazonaws.com/CollegeMgmt"
+			"url": "http://16.176.75.53/CollegeMgmt"
 		}
 	}
 	]
